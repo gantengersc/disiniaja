@@ -4,6 +4,11 @@ import boto3
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
+from dotenv import load_dotenv
+
+load_dotenv()  # Memuat variabel dari file .env
+
+
 # Konfigurasi logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
